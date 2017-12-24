@@ -44,11 +44,11 @@ Em caso de falha ele retorna
 ```json
 {
   "sucesso": false,
-  "resposta": "{ERRO}"
+  "resposta": "{Veja as respostar logo abaixo}"
 }
 ```
 
-#### Respostas
+### Respostas
 Quando o CEP digitado não possui 8 digitos numéricos:
 > O CEP é constituido por 8 numeros, verifique novamente
 
