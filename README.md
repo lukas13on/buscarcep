@@ -44,7 +44,7 @@ Em caso de falha ele retorna
 ```json
 {
   "sucesso": false,
-  "resposta": "{Veja as respostar logo abaixo}"
+  "resposta": "{Veja as respostas logo abaixo}"
 }
 ```
 
