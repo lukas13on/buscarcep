@@ -2,7 +2,7 @@
 Estarei tentando atualizar sempre que possível, colabore caso tenha interesse
 
 ## Metodo de uso
-Mude o protocolo e o campo para o valor desejado
+Mude as variaveis (campo e metodo) para os valores desejado
 
 ### Retorno
 Em caso de sucesso ele retornara
