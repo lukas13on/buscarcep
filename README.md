@@ -52,7 +52,7 @@ Em caso de falha ele retorna
 Quando o CEP não é encontrado no sistema dos correios:
 > Esse CEP não existe no sistema
 
-Quando o CEP digitado não possui 8 digitos numéricos:
+Quando o CEP digitado não possui 8 digitos:
 > O CEP é constituido por 8 numeros
 
 Quando algum erro desconhecido ocorre:
