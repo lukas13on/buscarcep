@@ -51,7 +51,9 @@ Em caso de falha ele retorna
 #### Respostas
 Quando o CEP digitado não possui 8 digitos numéricos:
 > O CEP é constituido por 8 numeros, verifique novamente
+
 Quando algum erro desconhecido ocorre:
 > Ocorreu um erro inesperado
+
 Quando acontece alguma falha ao conectar ao site dos Correios
 > Ocorreu uma falha ao tentar conectar aos Correios
