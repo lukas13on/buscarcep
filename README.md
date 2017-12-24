@@ -49,11 +49,14 @@ Em caso de falha ele retorna
 ```
 
 ### Respostas
+Quando o CEP não é encontrado no sistema dos correios:
+> Esse CEP não existe no sistema
+
 Quando o CEP digitado não possui 8 digitos numéricos:
-> O CEP é constituido por 8 numeros, verifique novamente
+> O CEP é constituido por 8 numeros
 
 Quando algum erro desconhecido ocorre:
 > Ocorreu um erro inesperado
 
 Quando acontece alguma falha ao conectar ao site dos Correios:
-> Ocorreu uma falha ao tentar conectar aos Correios
+> Falha ao tentar conectar aos Correios
