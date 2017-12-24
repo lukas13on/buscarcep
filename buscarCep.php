@@ -41,7 +41,7 @@ $regex = '#\<table class="tmptabela"\>(.+?)\<\/table\>#s';
 preg_match($regex, $result, $matchsTable);
 $matchTable = $matchsTable[0];
 
-if (count($matchsTable) > 0 && !curl_error($ch)) {
+if (count($matchsTable) > 0 && !curl_error($ch) && strlen($CEP) === 8) {
 
     $siglas = array(
         "AC" => "Acre",
@@ -125,15 +125,15 @@ if (count($matchsTable) > 0 && !curl_error($ch)) {
         array_push($jsonData["numeros"], array("inicio" => intval(explode("/", $range)[0]), "fim" => intval(explode("/", $range)[1])));
     }
 } else {
-    $jsonData = array("sucesso" => false, "erro" => "");
+    $jsonData = array("sucesso" => false, "resposta" => "");
     if (!curl_error($ch)) {
         if (strlen($CEP > 8) || strlen($CEP < 8)) {
-            $jsonData["erro"] = "O CEP é constituido por 8 numeros, verifique novamente";
+            $jsonData["resposta"] = "O CEP é constituido por 8 numeros, verifique novamente";
         } else {
-            $jsonData["erro"] = "Ocorreu um erro inesperado";
+            $jsonData["resposta"] = "Ocorreu um erro inesperado";
         }
     } else {
-        $jsonData["erro"] = "Ocorreu uma falha ao tentar conectar aos Correios";
+        $jsonData["resposta"] = "Ocorreu uma falha ao tentar conectar aos Correios";
     }
 }
 
