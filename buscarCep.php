@@ -181,12 +181,12 @@ if (count($matchsTable) > 0 && !curl_error($ch) && strlen($CEP) === 8) {
         ),
         "sede" => $sedes[strval(intval(substr($CEP, 0, 1)))],
         "estrutura" => array(
-            "regiao" => intval(substr($CEP, 0, 1)),
-            "subregiao" => intval(substr($CEP, 1, 1)),
-            "setor" => intval(substr($CEP, 2, 1)),
-            "subsetor" => intval(substr($CEP, 3, 1)),
-            "divisao" => intval(substr($CEP, 4, 1)),
-            "distribuicao" => intval(substr($CEP, 5, 3))
+            "regiao" => substr($CEP, 0, 1),
+            "subregiao" => substr($CEP, 1, 1),
+            "setor" => substr($CEP, 2, 1),
+            "subsetor" => substr($CEP, 3, 1),
+            "divisao" => substr($CEP, 4, 1),
+            "distribuicao" => substr($CEP, 5, 3)
         )
     );
 } else {
