@@ -35,5 +35,5 @@ Quando algum erro desconhecido ocorre:
 Quando o tempo limite de resposta é atingido (30 segundos):
 > Tempo limite de resposta foi atingido
 
-Quando ocorre algum erro no curl:
+Quando ocorre algum erro no curl (veja a [lista](https://curl.haxx.se/libcurl/c/libcurl-errors.html)):
 > O curl retornou código X de erro
