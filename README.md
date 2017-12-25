@@ -11,33 +11,7 @@ Mude as variaveis (campo e metodo) para os valores desejado
 Em caso de sucesso ele retornara
 ```json
 {
-  "sucesso": true,
-  "numeros": [
-    {
-      "inicio": 1951,
-      "fim": 1952
-    },
-    {
-      "inicio": 2439,
-      "fim": 2440
-    }
-  ],
-  "rua": "Rua Guaíra",
-  "bairro": "Jardim La Salle",
-  "cidade": "Toledo",
-  "estado": {
-    "nome": "Paraná",
-    "sigla": "PR"
-  },
-  "sede": "Curitiba",
-  "estrutura": {
-    "regiao": 8,
-    "subregiao": 5,
-    "setor": 9,
-    "subsetor": 0,
-    "divisao": 2,
-    "distribuicao": 140
-  }
+  "sucesso": true
 }
 ```
 Em caso de falha ele retorna
@@ -58,5 +32,8 @@ Quando o CEP digitado não possui 8 digitos:
 Quando algum erro desconhecido ocorre:
 > Ocorreu um erro inesperado
 
-Quando acontece alguma falha ao conectar ao site dos Correios:
-> Falha ao tentar conectar aos Correios
+Quando o tempo limite de resposta é atingido (30 segundos):
+> Tempo limite de resposta foi atingido
+
+Quando ocorre algum erro no curl:
+> O curl retornou código X de erro
